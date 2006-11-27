@@ -27,6 +27,7 @@ Requires:	/usr/bin/wish
 Requires:	tcl-sqlite3
 Requires:	tcl-tls
 Requires:	tk-Img
+Provides:	wwwbrowser
 
 %description -n hv3
 Html Viewer 3 (hv3) is a minimalist web browser that uses Tkhtml.
