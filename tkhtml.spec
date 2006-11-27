@@ -1,4 +1,4 @@
-%define		_rel	0.1
+%define		_rel	0.2
 Summary:	tkhtml
 Name:		tkhtml
 Version:	3.0
@@ -57,11 +57,11 @@ rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT{%{_datadir}/hv3,%{_bindir}}
 cp -a hv/*.tcl $RPM_BUILD_ROOT%{_datadir}/hv3
+cp -a hv/index.html $RPM_BUILD_ROOT%{_datadir}/hv3
 cat <<'EOF' > $RPM_BUILD_ROOT%{_bindir}/hv3
 #!/bin/sh
 exec %{_bindir}/wish %{_datadir}/hv3/hv3_main.tcl
 EOF
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
