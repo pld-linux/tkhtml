@@ -1,4 +1,4 @@
-%define		_rel	0.4
+%define		_rel	0.5
 Summary:	tkhtml
 Name:		tkhtml
 Version:	3.0
@@ -73,7 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog COPYRIGHT
 %dir %{_libdir}/Tkhtml3.0
-%{_libdir}/Tkhtml3.0/libTkhtml3.0.so
+%attr(755,root,root) %{_libdir}/Tkhtml3.0/libTkhtml3.0.so
 %{_libdir}/Tkhtml3.0/pkgIndex.tcl
 %{_mandir}/mann/tkhtml.n*
 
