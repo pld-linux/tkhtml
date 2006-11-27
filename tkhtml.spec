@@ -1,4 +1,4 @@
-%define		_rel	0.2
+%define		_rel	0.4
 Summary:	tkhtml
 Name:		tkhtml
 Version:	3.0
@@ -24,6 +24,9 @@ Group:		Applications/WWW
 URL:		http://tkhtml.tcl.tk/hv3.html
 Requires:	%{name} = %{version}-%{release}
 Requires:	/usr/bin/wish
+Requires:	tcl-sqlite3
+Requires:	tcl-tls
+Requires:	tk-Img
 
 %description -n hv3
 Html Viewer 3 (hv3) is a minimalist web browser that uses Tkhtml.
@@ -60,7 +63,7 @@ cp -a hv/*.tcl $RPM_BUILD_ROOT%{_datadir}/hv3
 cp -a hv/index.html $RPM_BUILD_ROOT%{_datadir}/hv3
 cat <<'EOF' > $RPM_BUILD_ROOT%{_bindir}/hv3
 #!/bin/sh
-exec %{_bindir}/wish %{_datadir}/hv3/hv3_main.tcl
+exec %{_bindir}/wish %{_datadir}/hv3/hv3_main.tcl -statefile ${HOME}/.hv3.db ${1:+"$@"}
 EOF
 
 %clean
