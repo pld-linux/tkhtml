@@ -1,6 +1,6 @@
 %define		_rel	0.5
 Summary:	tkhtml - Tcl/Tk widget that displays HTML
-Summary(pl):	tkhtml - widget Tcl/Tk wy¶wietlaj±cy HTML
+Summary(pl.UTF-8):   tkhtml - widget Tcl/Tk wyÅ›wietlajÄ…cy HTML
 Name:		tkhtml
 Version:	3.0
 Release:	0.alpha13.%{_rel}
@@ -19,14 +19,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 in C. It is a true widget, not a metawidget implemented using the Text
 or Canvas widgets of the Tcl/Tk core.
 
-%description -l pl
-"Tkhtml" to widget Tcl/Tk wy¶wietlaj±cy HTML. Jest zaimplementowany w
+%description -l pl.UTF-8
+"Tkhtml" to widget Tcl/Tk wyÅ›wietlajÄ…cy HTML. Jest zaimplementowany w
 C. Jest to prawdziwy widget, a nie metawidget zaimplementowany przy
-u¿yciu widgetów Text czy Canvas z rdzenia Tcl/Tk.
+uÅ¼yciu widgetÃ³w Text czy Canvas z rdzenia Tcl/Tk.
 
 %package -n hv3
 Summary:	Html Viewer 3 - Tkhtml3 Web Browser
-Summary(pl):	Html Viewer 3 - przegl±darka WWW oparta na Tkhtml3
+Summary(pl.UTF-8):   Html Viewer 3 - przeglÄ…darka WWW oparta na Tkhtml3
 Group:		Applications/WWW
 URL:		http://tkhtml.tcl.tk/hv3.html
 Requires:	%{name} = %{version}-%{release}
@@ -50,19 +50,19 @@ following:
 - HTTP cookies,
 - HTTP "Location" and "Refresh" headers.
 
-%description -n hv3 -l pl
-Html Viewer 3 (hv3) to minimalna przegl±darka WWW wykorzystuj±ca
+%description -n hv3 -l pl.UTF-8
+Html Viewer 3 (hv3) to minimalna przeglÄ…darka WWW wykorzystujÄ…ca
 Tkhtml.
 
-Hv3 nie jest jeszcze tak wyszukana jak niektóre popularne przegl±darki
-WWW. Przede wszystkim nie obs³uguje Javascriptu ani wtyczek (mo¿e
-jednak uruchamiaæ wiêkszo¶æ "tcletów" utworzonych dla wtyczki Tcl).
-Obs³uguje nastêpuj±ce funkcje:
- - formatowanie zwyk³ych dokumentów HTML/CSS,
+Hv3 nie jest jeszcze tak wyszukana jak niektÃ³re popularne przeglÄ…darki
+WWW. Przede wszystkim nie obsÅ‚uguje Javascriptu ani wtyczek (moÅ¼e
+jednak uruchamiaÄ‡ wiÄ™kszoÅ›Ä‡ "tcletÃ³w" utworzonych dla wtyczki Tcl).
+ObsÅ‚uguje nastÄ™pujÄ…ce funkcje:
+ - formatowanie zwykÅ‚ych dokumentÃ³w HTML/CSS,
  - dokumenty HTML Frameset,
  - formularze HTML,
  - ciasteczka HTTP,
- - nag³ówki HTTP "Location" i "Refresh".
+ - nagÅ‚Ã³wki HTTP "Location" i "Refresh".
 
 %prep
 %setup -q -n htmlwidget
