@@ -1,6 +1,6 @@
 %define		_rel	0.5
 Summary:	tkhtml - Tcl/Tk widget that displays HTML
-Summary(pl.UTF-8):   tkhtml - widget Tcl/Tk wyświetlający HTML
+Summary(pl.UTF-8):	tkhtml - widget Tcl/Tk wyświetlający HTML
 Name:		tkhtml
 Version:	3.0
 Release:	0.alpha13.%{_rel}
@@ -26,7 +26,7 @@ użyciu widgetów Text czy Canvas z rdzenia Tcl/Tk.
 
 %package -n hv3
 Summary:	Html Viewer 3 - Tkhtml3 Web Browser
-Summary(pl.UTF-8):   Html Viewer 3 - przeglądarka WWW oparta na Tkhtml3
+Summary(pl.UTF-8):	Html Viewer 3 - przeglądarka WWW oparta na Tkhtml3
 Group:		Applications/WWW
 URL:		http://tkhtml.tcl.tk/hv3.html
 Requires:	%{name} = %{version}-%{release}
