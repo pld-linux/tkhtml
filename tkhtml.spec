@@ -1,13 +1,13 @@
-%define		_rel	0.5
+%define		_rel	0.1
 Summary:	tkhtml - Tcl/Tk widget that displays HTML
 Summary(pl.UTF-8):	tkhtml - widget Tcl/Tk wyświetlający HTML
 Name:		tkhtml
 Version:	3.0
-Release:	0.alpha13.%{_rel}
+Release:	0.alpha16.%{_rel}
 License:	BSD-like
 Group:		Applications/WWW
-Source0:	http://tkhtml.tcl.tk/%{name}3-alpha-13.tar.gz
-# Source0-md5:	64218a74ad2f4dafaa57597ba2d4e9b7
+Source0:	http://tkhtml.tcl.tk/%{name}3-alpha-16.tar.gz
+# Source0-md5:	1bed3863ded3f695b6fe65ec02e7c0df
 Patch0:		%{name}-paths.patch
 URL:		http://tkhtml.tcl.tk/
 BuildRequires:	autoconf
