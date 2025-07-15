@@ -66,7 +66,7 @@ Obsługuje następujące funkcje:
 
 %prep
 %setup -q -n htmlwidget
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__aclocal} -I tclconfig
